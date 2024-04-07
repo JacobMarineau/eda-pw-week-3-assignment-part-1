@@ -23,7 +23,7 @@ console.log("Number of animals:", numberOfAnimals);
 // 2. TODO: Create a variable `numberOfFoods` and use the .length property
 //    to assign it the number value of how many items are inside `favoriteFoods`.
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
-let numberOfFoods = numberOfFoods.length;
+let numberOfFoods = favoriteFoods.length;
 console.log(numberOfFoods);
 // Accessing array items
 console.log("--- 3. Accessing items in an array ---");
@@ -36,16 +36,20 @@ console.log("First animal is", firstAnimal);
 //      of the second item from the `animalArray`.
 //      Be sure to console.log this new variable to make sure your code
 //      worked as expected.
+let secondAnimal = animalArray[1];
+console.log(secondAnimal);
 
 // 3.b. TODO: Create a variable `lastAnimal` and assign it the value of
 //      the "last" item in `animalArray`, using its array index.
 //      You'll need to console.log `animalArray` and `lastAnimal` to make
 //      sure that your code does what you want. (Never trust your code until
 //      you have proof that it works!)
-
+//let lastAnimal = animalArray[3];
+//console.log(lastAnimal, "last animal");
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length
 //       property, rather than the exact (hardcoded) index number of the last item.
-
+let lastAnimal = animalArray.pop();
+console.log(lastAnimal);
 // Adding & Removing Array Items
 console.log("--- 4. Adding and removing array items ---");
 
@@ -58,6 +62,9 @@ console.log("Added an animal to end,", animalArray);
 //      a dessert that you love.
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
+let dessert = "beancakes";
+dessert.push(favoriteFoods);
+console.log(dessert);
 
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = "walrus";
